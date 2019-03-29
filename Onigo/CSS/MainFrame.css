@@ -1,0 +1,345 @@
+@charset "utf-8";
+body, div {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font: 12px/22px "\5B8B\4F53", Arial, Helvetica, sans-serif
+}
+
+body {
+    color: #000000;
+    background: #FFF;
+    text-align: left
+}
+
+a {
+    color: #000000;
+    text-decoration: none
+}
+
+a:hover {
+    color: #BA2636;
+    text-decoration: underline
+}
+
+#header, #map, #data, #container, #bigcontainer {
+    margin: 0 auto;
+    width: 338px;
+    height: 100px
+}
+
+/* 以上代码设置三个共用样式 */
+#addfriend, #addfilter, #addnote {
+    height: 30px;
+    width: 90px
+}
+
+#container {
+    height: 500px;
+    position: relative
+}
+
+#headerleft {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    left: 5px;
+    top: 20px;
+    z-index: 99;
+    position: absolute;
+    background-color: #FFFFFF
+}
+
+#header {
+    height: 75px
+}
+
+#map {
+    height: 150px;
+    z-index: 0
+}
+
+#data {
+}
+
+#addnote {
+    position: absolute;
+    top: 10px;
+    z-index: 100;
+    margin: 0 auto;
+    left: 220px
+}
+
+#addfilter {
+    position: absolute;
+    top: 50px;
+    z-index: 100;
+    margin: 0 auto;
+    left: 220px
+}
+
+#addfriend {
+    position: absolute;
+    top: 90px;
+    z-index: 100;
+    margin: 0 auto;
+    left: 220px
+}
+
+#setinfo {
+    position: absolute;
+    top: 80px;
+    z-index: 100;
+    margin: 0 auto;
+    left: 27px
+}
+
+#bigcontainer {
+    height: 600px
+}
+
+table.notelist {
+    border: 1px solid #1C6EA4;
+    background-color: #EEEEEE;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table.notelist td, table.notelist th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+}
+
+table.notelist tbody td {
+    font-size: 13px;
+}
+
+table.notelist tr:nth-child(even) {
+    background: #D0E4F5;
+}
+
+table.notelist thead {
+    background: #1C6EA4;
+    background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    border-bottom: 2px solid #444444;
+}
+
+table.notelist thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-left: 2px solid #D0E4F5;
+}
+
+table.notelist thead th:first-child {
+    border-left: none;
+}
+
+table.notelist tfoot {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #D0E4F5;
+    background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    border-top: 2px solid #444444;
+}
+
+table.notelist tfoot td {
+    font-size: 14px;
+}
+
+table.notelist tfoot .links {
+    text-align: right;
+}
+
+table.notelist tfoot .links a {
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+.wrap {
+    margin: 20px auto;
+    display: block;
+    width: 300px;
+    height: 310px;
+    padding: 2px;
+
+    background: #f3f3f3;
+    border: 1px solid #fff;
+    border-radius: 5px;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    padding: 4px 7px;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid #bbb;
+    overflow: visible;
+    font: bold 13px arial, helvetica, sans-serif;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #555;
+
+    background-color: #ddd;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0)));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+
+    -webkit-transition: background-color .2s ease-out;
+    -moz-transition: background-color .2s ease-out;
+    -ms-transition: background-color .2s ease-out;
+    -o-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    background-clip: padding-box; /* Fix bleeding */
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .9);
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.button:hover {
+    background-color: #eee;
+    color: #555;
+}
+
+.button:active {
+    background: #e9e9e9;
+    position: relative;
+    top: 1px;
+    text-shadow: none;
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+}
+
+.button[disabled], .button[disabled]:hover, .button[disabled]:active {
+    border-color: #eaeaea;
+    background: #fafafa;
+    cursor: default;
+    position: static;
+    color: #999;
+    /* Usually, !important should be avoided but here it's really needed :) */
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.box9 {
+    margin: 40px auto;
+    width: 3800px;
+    min-height: 290px;
+    padding: 10px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: white;
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.box9:before {
+    content: '';
+    width: 110%;
+    left: 1px;
+    height: 104%;
+    z-index: -1;
+    position: absolute;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.0);
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translate(-5%, -5%);
+}
+
+.box9:after {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 30%;
+    width: 130px;
+    height: 40px;
+    background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.0)), color-stop(.1, rgba(0, 0, 0, 0.2)));
+    border-left: 1px dashed rgba(0, 0, 0, 0.1);
+    border-right: 1px dashed rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+
+.box9 img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.box8 {
+    margin: 40px auto;
+    width: 300px;
+    min-height: 20px;
+    padding: 10px;
+    position: relative;
+    border: 2px solid #ccc;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+}
+
+.box8:before {
+    content: '';
+    top: 0;
+    width: 110%;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    border: 1px solid #ccc;
+    background: -webkit-gradient(linear, 0% 20%, 0% 92%, from(#f3f3f3), to(#fff), color-stop(.1, #f3f3f3));
+    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    -webkit-transform: translate(-5%, -5%);
+}
+
+.box8:after {
+    content: '';
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 115%;
+    z-index: -2;
+    background: none;
+    position: absolute;
+    border-radius: 20px;
+    -webkit-box-shadow: 15px 0px 30px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translate(0, 0);
+}
+
+.box8 img {
+    width: 100%;
+    margin-top: 15px;
+}
+
